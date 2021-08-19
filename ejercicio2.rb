@@ -56,6 +56,7 @@ end
 
 class Mamifero < Animal
   include Caminante
+  include Nadador
 end
 
 class Insecto < Animal
@@ -81,7 +82,6 @@ class Pato < Ave
 end
 
 class Perro < Mamifero
-  include Nadador
   include Carnivoro
 end
 
@@ -107,6 +107,7 @@ puts a1.nombre
 puts a1.volar
 puts a1.caminar
 puts a1.comer
+puts a1.nadar
 
 p1 = Perro.new('Perro')
 puts p1.nombre
